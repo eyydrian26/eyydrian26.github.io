@@ -1,0 +1,613 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Hershey's Pizza</title>
+  <style>
+    header{
+  background: url(img/banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 750px;
+}
+@media screen and (max-width: 670px){
+  header{
+    min-height: 500px;
+  }
+  .container0 .card{
+    position: relative;
+    min-height: 100px;
+    max-width: 100px;
+  }
+  .gallery{
+    position: absolute;
+    top: 300%;
+    left: 0;
+  }
+}
+
+.logo img{
+  position: absolute;
+  top: 30%;
+  right: 20%;
+}
+.section{
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+.tabs .indicator{
+  background-color: #1a237e;
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+  background: transparent;
+}
+.nav-wrapper{
+  position: fixed;
+  z-index: 9;
+}
+
+/* card 1 */
+.container0 {
+  position : absolute;
+  width : 1100px;
+  display : flex;
+  align-items : center;
+  flex-wrap : warp;
+  padding : 10px;
+  left: 10%; 
+  top: 125%; 
+}
+
+.container0 .card {
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #fff;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.container0 .card:hover {
+  height : 320px;    
+}
+
+
+.container0 .card .image {
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container0 .card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.container0 .card .content {
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+.container0 .card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+/* card 2 */
+.container1 {
+  position : absolute;
+  width : 1100px;
+  display : flex;
+  align-items : center;
+  flex-warp : warp;
+  padding : 10px;
+  left: 35%; 
+  top: 125%; 
+}
+
+.container1 .card {
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #fff;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.container1 .card:hover {
+  height : 320px;    
+}
+
+
+.container1 .card .image {
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container1 .card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.container1 .card .content {
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+}
+.container1 .card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+}
+/* card 3 */
+.container2 {
+  position : absolute;
+  width : 1100px;
+  display : flex;
+  align-items : center;
+  flex-warp : warp;
+  padding : 10px;
+  left: 60%; 
+  top: 125%; 
+}
+
+.container2 .card {
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #fff;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.container2 .card:hover {
+  height : 320px;    
+}
+
+
+.container2 .card .image {
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.container2 .card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.container2 .card .content {
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+}
+.container2 .card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+}
+
+ /* pizza gallery */
+ .gallery {
+  --g: 8px;   /* the gap */
+  --s: 400px; /* the size */
+  
+  display: grid;
+  border-radius: 50%;
+}
+.gallery > img {
+  grid-area: 1/1;
+  width: 400px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: translate(var(--_x,0),var(--_y,0));
+  cursor: pointer;
+  z-index: 0;
+  transition: .3s, z-index 0s .3s;
+}
+.gallery img:hover {
+  --_i: 1;
+  z-index: 1;
+  transition: transform .2s, clip-path .3s .2s, z-index 0s;
+}
+.gallery:hover img {
+  transform: translate(0,0);
+}
+.gallery > img:nth-child(1) {
+  clip-path: polygon(50% 50%,calc(50%*var(--_i,0)) calc(120%*var(--_i,0)),0 calc(100%*var(--_i,0)),0 0,100% 0,100% calc(100%*var(--_i,0)),calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
+  --_y: calc(-1*var(--g))
+}
+.gallery > img:nth-child(2) {
+  clip-path: polygon(50% 50%,calc(100% - 120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100% - 100%*var(--_i,0)) 0,100% 0,100% 100%,calc(100% - 100%*var(--_i,0)) 100%,calc(100% - 120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+  --_x: var(--g)
+}
+.gallery > img:nth-child(3) {
+  clip-path: polygon(50% 50%,calc(100% - 50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)),100% calc(100% - 120%*var(--_i,0)),100% 100%,0 100%,0 calc(100% - 100%*var(--_i,0)),calc(50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)));
+  --_y: var(--g)
+}
+.gallery > img:nth-child(4) {
+  clip-path: polygon(50% 50%,calc(120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100%*var(--_i,0)) 0,0 0,0 100%,calc(100%*var(--_i,0)) 100%,calc(120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+  --_x: calc(-1*var(--g))
+}
+
+.gallery{
+  position: absolute;
+  top: 205%;
+  left: 50%;
+  display: grid;
+  place-content: center;
+}
+/* pizza gallery 2 */
+.gallery1 {
+  --g: 8px;   /* the gap */
+  --s: 400px; /* the size */
+  
+  display: grid;
+  border-radius: 50%;
+}
+.gallery1 > img {
+  grid-area: 1/1;
+  width: 400px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: translate(var(--_x,0),var(--_y,0));
+  cursor: pointer;
+  z-index: 0;
+  transition: .3s, z-index 0s .3s;
+}
+.gallery1 img:hover {
+  --_i: 1;
+  z-index: 1;
+  transition: transform .2s, clip-path .3s .2s, z-index 0s;
+}
+.gallery1:hover img {
+  transform: translate(0,0);
+}
+.gallery1 > img:nth-child(1) {
+  clip-path: polygon(50% 50%,calc(50%*var(--_i,0)) calc(120%*var(--_i,0)),0 calc(100%*var(--_i,0)),0 0,100% 0,100% calc(100%*var(--_i,0)),calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
+  --_y: calc(-1*var(--g))
+}
+.gallery1 > img:nth-child(2) {
+  clip-path: polygon(50% 50%,calc(100% - 120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100% - 100%*var(--_i,0)) 0,100% 0,100% 100%,calc(100% - 100%*var(--_i,0)) 100%,calc(100% - 120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+  --_x: var(--g)
+}
+.gallery1 > img:nth-child(3) {
+  clip-path: polygon(50% 50%,calc(100% - 50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)),100% calc(100% - 120%*var(--_i,0)),100% 100%,0 100%,0 calc(100% - 100%*var(--_i,0)),calc(50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)));
+  --_y: var(--g)
+}
+.gallery1 > img:nth-child(4) {
+  clip-path: polygon(50% 50%,calc(120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100%*var(--_i,0)) 0,0 0,0 100%,calc(100%*var(--_i,0)) 100%,calc(120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+  --_x: calc(-1*var(--g))
+}
+
+.gallery1{
+  position: absolute;
+  left: 15%;
+  top: 205%;
+  display: grid;
+  place-content: right;
+}
+.flavor{
+  background-color: #f5f829;
+    text-align: center;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 182%;
+    left: 0; 
+}
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper black">
+      <div class="container">
+        <a href="#" class="brand-logo">Hershey's</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#pizza">Pizza</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Reservation</a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small black" data-position="bottom" data-tooltip="Instagram"> 
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small black" data-position="bottom" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small black" data-position="bottom" data-tooltip="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a></li>
+        </ul>
+        <ul class="sidenav black-text white" id="mobile-menu">
+          <li><a href="#">Pizza</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- logo -->
+  <div class="logo">
+    <img src="img/logo_black-removebg-preview.png" alt="" class="responsive-img hide-on-med-and-down">
+  </div>
+
+  <!-- cards -->
+  <div class=container0>
+    <div class=card>
+      <div class=image>
+        <img src="img/dough.png" alt="">
+      </div>
+      <div class=content>
+        <h5>Freshly Baked</h5>
+        <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+      </div>
+    </div>
+  </div>
+    <div class=container1>
+        <div class=card>
+          <div class=image>
+            <img src="img/daxn3l0i.png" alt="">
+          </div>
+          <div class=content>
+            <h5>Quality Pizza</h5>
+            <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+          </div>
+        </div>
+    </div>
+    <div class=container2>
+        <div class=card>
+          <div class=image>
+            <img src="img/pizza flavor1.jpg" alt="">
+          </div>
+          <div class=content>
+            <h5>Variety of Flavors</h5>
+            <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+          </div>
+        </div>
+    </div>
+
+  <!-- pizza galley-->
+  <section class="section container scrollspy" id="pizza">
+    <div class="flavor">
+      <h2>CHOOSE ON OUR WIDE RANGE OF PIZZA</h2>
+    </div>
+    <div class="container">
+      <div class="gallery">
+          <img src="img/pizza 1.jpg" alt="" class="tooltipped" data-tooltip="White Cheddar">
+          <img src="img/pizza 2.png" alt="" class="tooltipped" data-tooltip="Cheese">
+          <img src="img/pizza 3.png" alt="" class="tooltipped" data-tooltip="Original Pepperoni">
+          <img src="img/pizza 4.png" alt="" class="tooltipped" data-tooltip="Pepperoni w/ Basil">
+      </div>
+      <div class="gallery1">
+          <img src="img/pizza 5.png" alt="" class="tooltipped" data-tooltip="Seafood">
+          <img src="img/pizza 6.png" alt="" class="tooltipped" data-tooltip="Pepperoni & Mushroom">
+          <img src="img/pizza 7.png" alt="" class="tooltipped" data-tooltip="T.O.M">
+          <img src="img/pizza 8.png" alt="" class="tooltipped" data-tooltip="Ham">
+      </div>
+  </div>
+  </section>
+  
+  
+
+  <!-- parallax -->
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/bg pizza.jpg" alt="">
+    </div>
+  </div>
+  
+
+  <!-- about tabs-->
+  <section class="section container scrollspy" id="about">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="black-text">About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <!-- tabs -->
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#pizzas" class="black-text">Pizzas</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#history" class="black-text">History</a>
+          </li>
+        </ul>
+        <div id="pizzas" class="col s12">
+            <img src="img/pizza png.png" alt="" class="responsive-img">
+            <p class="flow-text">Pizza</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut fugit alias vitae sit nesciunt quas, iure nostrum minima enim ducimus commodi saepe, ea ratione corrupti cupiditate quae eos aspernatur adipisci?</p>
+        </div>
+        <div id="history" class="col s12">
+            <p class="flow-text black-text">History of the Company</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+            <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consectetur nobis sequi ducimus vitae libero tenetur necessitatibus, ullam temporibus laboriosam? Qui minus ducimus nam veniam fugit dolorem officia voluptatem nulla?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempore porro culpa doloribus recusandae! Asperiores, eligendi dignissimos! Quia dolorem veritatis, aspernatur aperiam vero beatae, suscipit impedit assumenda voluptate cumque veniam.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- reservation-->
+  <section class="section container scrollspy black" id="contact">
+    <div class="row">
+      <div class="col s12 l5 push-l1">
+        <h2 class="yellow-text">Reservation</h2>
+        <p class="white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eum molestias placeat velit ex suscipit eveniet earum deserunt aperiam recusandae. Quae ipsum impedit quo quaerat voluptates natus rerum, autem quibusdam!</p>
+      </div>
+      <div class="col s12 l5 offset-l1">
+        <form>
+          <div class="input-field">
+            <i class="material-icons prefix white-text">person</i>
+            <input type="email" id="email">
+            <label for="email">Your Name</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix white-text">mail</i>
+            <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+            <label for="message">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix white-text">date_range</i>
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Select a date </label>
+          </div>
+          <div class="input-field">
+            <p class="white-text">Select Branch</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>New York</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>New Jersey</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn yellow black-text">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <br><br><br>
+
+  <!-- footer -->
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12 push-l1">
+          <h5 class="yellow-text">Company</h5><br>
+          <a href="#">
+            <h6 class="white-text">> About Us</h6><br>
+            <h6 class="white-text">> Privacy Policy</h6><br>
+            <h6 class="white-text">> Terms & Condition</h6>
+          </a>
+        </div>
+        <div class="col l4 s12 pull-l1">
+          <h5 class="yellow-text">Contact</h5>
+          <ul>
+            <li><i class="material-icons">local_pizza</i><h6>123 Street, New York</h6></li>
+            <li><i class="material-icons">phone</i><h6>+012 345 6790</h6></li>
+            <li><i class="material-icons">mail</i><h6>hersheyspizza@gmail.com</h6></li>
+          </ul>
+        </div>
+        <div class="col l2 s12 pull-l1">
+            <h5 class="yellow-text">Opening</h5>
+            <p>Monday-Saturday</p>
+            <p>9:00am-10:00pm</p>
+            <p class="red-text">Closed on Sundays</p>
+            <p></p>
+          </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2023 Hershey's Pizza</div>
+    </div>
+  </footer>
+
+  <!-- javascript-->
+  <script src="js/jquery.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+
+    });
+  </script>
+</body>
+</html>
